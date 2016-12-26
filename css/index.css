@@ -1,0 +1,118 @@
+body {
+	background-color: #f2f2f2;
+}
+#main {
+	width:1080px;
+	margin: 30px auto 0;
+} 
+.swiper-slide img {
+	width:100%;
+	display: block;
+}
+
+.prev-btn,.next-btn {
+	position: absolute;
+	top:45%;
+	z-index: 10;
+}
+.prev-btn {
+	left:10px;
+}
+.next-btn {
+	right:10px;
+}
+.swiper-slide {
+	position: relative;
+}
+
+.swiper-pagination {
+	position:relative;
+	width:800px;
+	margin:20px auto;
+}
+.swiper-pagination span {
+	margin: 0 5px;
+}
+
+.swiper-slide p {
+	margin:0;
+	position: absolute;
+	padding: 10px 20px;
+	width:100%;
+	left:0;
+	bottom:0;
+	color:#fff;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#tips {
+	border-top:1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	text-indent: 2em;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	padding: 24px 12px;
+	line-height: 1.6;
+}
+
+#ad {
+	text-align: center;
+	margin: 12px auto 20px;
+}
+#workList li{
+	float:left;
+	width: 30%;
+	border-radius: 8px;
+	box-shadow: 0 0 2px #e3e3e3;
+	overflow: hidden;
+	margin-bottom: 5%;
+	background-color: #fff;
+}
+
+#workList li:nth-child(3n+2) {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#workList li a {
+	display: block;
+}
+#workList li p {
+	height:44px;
+	line-height: 44px;
+	font-size: 14px;
+	color:#333;
+	text-align: center;
+	font-family: "microsoft yahei";
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#workList li a > div {
+	position: relative;
+}
+#workList li a:hover .mask {
+	display: block;
+	/*opacity: 1;*/
+}
+#workList li .mask  {
+	display: none;
+	/*opacity: 0;*/
+	/*transition: opacity 0.4s;*/ 
+	position: absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	color:#fff;
+	text-align: center;
+	background-color: rgba(0,0,0,0.6);
+	/*border-radius: 8px;*/
+	font-family: "microsoft yahei";
+}
+#workList li .mask h2 {
+	font-size: 24px;
+	margin-top: 20%;
+	margin-bottom: 8px;
+}
